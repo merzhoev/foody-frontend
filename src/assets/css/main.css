@@ -1,0 +1,79 @@
+@import url('./header/index.css');
+@import url('./sections/search.css');
+
+/* reset base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+button {
+  font-family: 'Inter';
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+body {
+  font-family: 'Inter';
+}
+
+.scroll-block {
+  overflow: hidden;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--primary-btn-color);
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-text-color);
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--label-color);
+  margin-bottom: 6px;
+  align-self: flex-start;
+}
+
+.App {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 32px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.main {
+  padding: 96px 0;
+  flex-grow: 1;
+}
+
+.footer {
+  height: 300px;
+}
