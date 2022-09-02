@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/foody/static/css/main.45286e92.css",
-    "main.js": "/foody/static/js/main.086d2d0e.js",
+    "main.css": "/foody/static/css/main.e1016df8.css",
+    "main.js": "/foody/static/js/main.1782bea1.js",
     "static/js/787.ef291911.chunk.js": "/foody/static/js/787.ef291911.chunk.js",
     "static/media/Inter-Medium.eot": "/foody/static/media/Inter-Medium.900d1276b560a05c1947.eot",
     "static/media/Inter-Medium.ttf": "/foody/static/media/Inter-Medium.d02b2fd011f21f039c55.ttf",
@@ -17,12 +17,12 @@
     "static/media/Inter-Regular.woff": "/foody/static/media/Inter-Regular.ae2ac50c3db4c5420cf8.woff",
     "static/media/done-icon.svg": "/foody/static/media/done-icon.e3bc38b6e638091a8295.svg",
     "index.html": "/foody/index.html",
-    "main.45286e92.css.map": "/foody/static/css/main.45286e92.css.map",
-    "main.086d2d0e.js.map": "/foody/static/js/main.086d2d0e.js.map",
+    "main.e1016df8.css.map": "/foody/static/css/main.e1016df8.css.map",
+    "main.1782bea1.js.map": "/foody/static/js/main.1782bea1.js.map",
     "787.ef291911.chunk.js.map": "/foody/static/js/787.ef291911.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45286e92.css",
-    "static/js/main.086d2d0e.js"
+    "static/css/main.e1016df8.css",
+    "static/js/main.1782bea1.js"
   ]
 }
