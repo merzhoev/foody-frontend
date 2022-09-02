@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/foody/static/css/main.733e4732.css",
+    "main.css": "/foody/static/css/main.45286e92.css",
     "main.js": "/foody/static/js/main.086d2d0e.js",
     "static/js/787.ef291911.chunk.js": "/foody/static/js/787.ef291911.chunk.js",
     "static/media/Inter-Medium.eot": "/foody/static/media/Inter-Medium.900d1276b560a05c1947.eot",
@@ -17,12 +17,12 @@
     "static/media/Inter-Regular.woff": "/foody/static/media/Inter-Regular.ae2ac50c3db4c5420cf8.woff",
     "static/media/done-icon.svg": "/foody/static/media/done-icon.e3bc38b6e638091a8295.svg",
     "index.html": "/foody/index.html",
-    "main.733e4732.css.map": "/foody/static/css/main.733e4732.css.map",
+    "main.45286e92.css.map": "/foody/static/css/main.45286e92.css.map",
     "main.086d2d0e.js.map": "/foody/static/js/main.086d2d0e.js.map",
     "787.ef291911.chunk.js.map": "/foody/static/js/787.ef291911.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.733e4732.css",
+    "static/css/main.45286e92.css",
     "static/js/main.086d2d0e.js"
   ]
 }
