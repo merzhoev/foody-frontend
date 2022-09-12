@@ -1,5 +1,12 @@
 @import url('./header/index.css');
+@import url('./footer/index.css');
+@import url('./full-dish/index.css');
+@import url('./favorite/index.css');
+@import url('./auth/index.css');
+@import url('./not-found/index.css');
+@import url('./paginate//index.css');
 @import url('./sections/search.css');
+@import url('./sections/dishes.css');
 
 /* reset base styles */
 * {
@@ -10,6 +17,7 @@
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 li {
@@ -41,8 +49,23 @@ body {
   transition: 0.2s;
 }
 
+.btn-primary--disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
 .btn-primary:hover {
   background-color: var(--primary-text-color);
+}
+
+.btn-attention {
+  color: #fff;
+  background-color: var(--attention-btn-color);
+  transition: 0.2s;
+}
+
+.btn-attention:hover {
+  background-color: var(--attention-text-color);
 }
 
 .label {
@@ -55,7 +78,6 @@ body {
 }
 
 .App {
-  max-width: 1440px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -72,8 +94,4 @@ body {
 .main {
   padding: 96px 0;
   flex-grow: 1;
-}
-
-.footer {
-  height: 300px;
 }

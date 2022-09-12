@@ -7,4 +7,59 @@
   .header__hamburger-container {
     display: block;
   }
+
+  .main {
+    padding: 64px 0;
+  }
+
+  .search {
+    margin: 0 auto 64px;
+  }
+
+  .dishes__title {
+    text-align: center;
+  }
+
+  .dishes__list {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+
+  .dish-card {
+    max-width: 343px;
+  }
+
+  .dish-card__image-container {
+    height: 200px;
+    margin-bottom: 24px;
+  }
+
+  .dish-card__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .paginate {
+    display: none;
+  }
+
+  .paginate-mobile {
+    display: flex;
+    align-items: center;
+    color: var(--gray);
+  }
+
+  .footer__content {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 24px;
+  }
+
+  .full-dish {
+    margin: 0 auto 64px;
+  }
+
+  .favorite__title {
+    margin-bottom: 64px;
+  }
 }

@@ -1,0 +1,54 @@
+.not-found {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.not-found__error {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--primary-text-color);
+  margin-bottom: 12px;
+}
+
+.not-found__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+
+.not-found__subtitle {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--gray);
+  margin-bottom: 48px;
+}
+
+.not-found__btns {
+  display: flex;
+  column-gap: 20px;
+}
+
+.not-found__back-btn,
+.not-found__home-btn {
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 8px;
+}
+
+.not-found__back-btn {
+  display: flex;
+  border: 1px solid #d0d5dd;
+  color: var(--label-color);
+}
+
+.not-found__back-btn-icon {
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}

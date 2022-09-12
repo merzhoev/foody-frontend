@@ -1,6 +1,6 @@
 .search {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 96px;
 }
 
 .search__title {
@@ -104,7 +104,6 @@
 
 .search__by-ingrs-ingrs-list {
   display: flex;
-  flex-grow: 1;
   flex-wrap: wrap;
   gap: 8px;
 }
@@ -157,7 +156,8 @@
   width: 100%;
   height: fit-content;
   max-height: 295px;
-  bottom: calc(-295px - 4px - 20px);
+  transform: translateY(100%) translateY(20px);
+  bottom: -5px;
   left: 0;
   border: 1px solid #eaecf0;
   background-color: #fff;
@@ -207,7 +207,7 @@
   visibility: visible;
   opacity: 1;
   max-height: 295px;
-  transform: translateY(-20px);
+  transform: translateY(100%) translateY(0);
 }
 
 .search__by-ingrs-checkbox-label {

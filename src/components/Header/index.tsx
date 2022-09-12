@@ -1,50 +1,62 @@
 import React from 'react';
+import clsx from 'clsx';
+import { Link } from 'react-router-dom';
+import { useAppDispatch, useAppSelector } from '../../redux/store';
+import { selectIsAuth } from '../../redux/reducers/auth';
+import { logout } from '../../redux/actions/auth';
 
 export const Header = () => {
-  React.useEffect(() => {
-    const hamburger = document.querySelector('.header__hamburger-container') as HTMLDivElement;
+  const dispatch = useAppDispatch();
+  const isAuth = useAppSelector(selectIsAuth);
+  const [isMenuOpen, setIsMenuOpen] = React.useState<boolean>(false);
 
-    const toggleMobileHeader = () => {
-      const header = document.querySelector('.header') as HTMLDivElement;
-      header.classList.toggle('mobile-menu--open');
-      document.body.classList.toggle('scroll-block');
-    };
+  const toggleMenu = () => {
+    document.body.classList.toggle('scroll-block');
+    setIsMenuOpen((prev) => !prev);
+  };
 
-    hamburger.addEventListener('click', toggleMobileHeader);
-
-    return () => {
-      hamburger.removeEventListener('click', toggleMobileHeader);
-    };
-  }, []);
+  const handleLogoutClick = () => {
+    if (window.confirm('Вы действительно хотите выйти?')) {
+      dispatch(logout());
+    }
+  };
 
   return (
-    <header className="header">
+    <header className={clsx('header', isMenuOpen && 'mobile-menu--open')}>
       <div className="container">
         <div className="header__content">
-          <a href="#" className="header__logo">
+          <Link to="/" className="header__logo">
             foody
-          </a>
+          </Link>
           <ul className="header__menu">
             <li className="header__menu-item">
-              <a href="#" className="header__menu-link">
+              <Link to="/" className="header__menu-link">
                 Главная
-              </a>
+              </Link>
             </li>
             <li className="header__menu-item">
-              <a href="#" className="header__menu-link">
+              <Link to="/favorites" className="header__menu-link">
                 Избранное
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="header__auth">
-            <a href="#" className="header__btn header__btn-signin">
-              Войти
-            </a>
-            <a href="#" className="header__btn btn-primary">
-              Регистрация
-            </a>
+            {isAuth ? (
+              <button onClick={handleLogoutClick} className="header__btn btn-attention">
+                Выйти
+              </button>
+            ) : (
+              <>
+                <Link to="/login" className="header__btn header__btn-signin">
+                  Войти
+                </Link>
+                <Link to="/register" className="header__btn btn-primary">
+                  Регистрация
+                </Link>
+              </>
+            )}
           </div>
-          <div className="header__hamburger-container">
+          <div className="header__hamburger-container" onClick={toggleMenu}>
             <div className="header__hamburger">
               <div className="header__hamburger-inner">
                 <span className="header__hamburger-line"></span>
@@ -58,7 +70,7 @@ export const Header = () => {
               <p className="header__mobile-menu-label">Меню</p>
               <ul className="header__mobile-menu-nav">
                 <li className="header__mobile-menu-item">
-                  <a href="#" className="header__mobile-menu-link">
+                  <Link to="/" className="header__mobile-menu-link" onClick={toggleMenu}>
                     <svg
                       className="header__mobile-menu-icon"
                       width="24"
@@ -80,10 +92,10 @@ export const Header = () => {
                     </svg>
 
                     <span className="header__mobile-menu-text">Главная</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="header__mobile-menu-item">
-                  <a href="#" className="header__mobile-menu-link">
+                  <Link to="/favorites" className="header__mobile-menu-link" onClick={toggleMenu}>
                     <svg
                       className="header__mobile-menu-icon"
                       width="24"
@@ -104,16 +116,27 @@ export const Header = () => {
                       </defs>
                     </svg>
                     <span className="header__mobile-menu-text">Избранное</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <div className="header__mobile-auth">
-                <a href="#" className="header__btn header__btn-signin">
-                  Войти
-                </a>
-                <a href="#" className="header__btn btn-primary">
-                  Регистрация
-                </a>
+                {isAuth ? (
+                  <button onClick={handleLogoutClick} className="header__btn btn-attention">
+                    Выйти
+                  </button>
+                ) : (
+                  <>
+                    <Link
+                      to="/login"
+                      className="header__btn header__btn-signin"
+                      onClick={toggleMenu}>
+                      Войти
+                    </Link>
+                    <Link to="/register" className="header__btn btn-primary" onClick={toggleMenu}>
+                      Регистрация
+                    </Link>
+                  </>
+                )}
               </div>
             </div>
           </div>
