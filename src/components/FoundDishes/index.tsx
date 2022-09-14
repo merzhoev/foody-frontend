@@ -1,8 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 
-import { DishCard } from '../DishCard';
-import { Paginate } from '../Paginate';
+import { DishCard, Paginate } from '../';
 import { useAppDispatch, useAppSelector } from '../../redux/store';
 import { fetchDishesByIngrts, fetchDishesByName, setPageAction } from '../../redux/actions/dish';
 

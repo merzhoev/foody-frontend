@@ -4,7 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../redux/store';
 import { fetchFullDish, fetchSimilarDishes } from '../../redux/actions/fullDish';
 
-import { DishCard } from '../../components/DishCard';
+import { DishCard } from '../../components';
 import { selectIsAuth } from '../../redux/reducers/auth';
 import { fetchAddFavorite, fetchRemoveFavorite } from '../../redux/actions/favorite';
 

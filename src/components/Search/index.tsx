@@ -1,7 +1,6 @@
 import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import { SearchByName } from '../SearchByName';
-import { SearchByIngrs } from '../SearchByIngrs';
+import { SearchByName, SearchByIngrs } from '../';
 
 export const Search = () => {
   const tabs: Array<string> = ['Поиск по названию', 'Поиск по ингредиентам'];

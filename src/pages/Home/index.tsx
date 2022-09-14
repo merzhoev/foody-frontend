@@ -1,6 +1,5 @@
 import React from 'react';
-import { Search } from '../../components/Search';
-import { FoundDishes } from '../../components/FoundDishes';
+import { Search, FoundDishes } from '../../components';
 
 export const Home = () => {
   return (

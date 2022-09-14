@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import { fetchDishesByName, setFindByAction, setPageAction } from '../../redux/actions/dish';
+import { fetchDishesByName, setFindByAction } from '../../redux/actions/dish';
 import { setDishNameAction } from '../../redux/actions/search';
 import { useAppDispatch, useAppSelector } from '../../redux/store';
 

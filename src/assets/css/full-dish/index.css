@@ -42,6 +42,7 @@
   display: flex;
   padding: 8px 14px;
   border: 1px solid #d0d5dd;
+  background-color: #fff;
   border-radius: 8px;
 }
 
@@ -169,4 +170,5 @@
   font-size: 18px;
   line-height: 28px;
   color: var(--primary-text-color);
+  background-color: #fff;
 }

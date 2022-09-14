@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import React from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
-import { DishCard } from '../../components/DishCard';
+import { DishCard } from '../../components';
 import { fetchFavorites } from '../../redux/actions/favorite';
 import { selectIsAuth } from '../../redux/reducers/auth';
 import { useAppDispatch, useAppSelector } from '../../redux/store';

@@ -1,17 +1,11 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import './App.css';
 
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
-import { Home } from './pages/Home';
-import { FullDish } from './pages/FullDish';
-import { NotFound } from './pages/NotFound';
-import { Login } from './pages/Login';
-import { Register } from './pages/Register';
+import { Home, FullDish, NotFound, Login, Register, Favorite } from './pages';
+import { Header, Footer } from './components';
+
 import { useAppDispatch } from './redux/store';
 import { fetchMe } from './redux/actions/auth';
-import { Favorite } from './pages/Favorite';
 import { fetchFavorites } from './redux/actions/favorite';
 
 function App() {
