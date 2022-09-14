@@ -1,46 +1,64 @@
-# Getting Started with Create React App
+# Foody &ndash; сайт рецептов
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Основная фишка сайта в том, что пользователь указывает ингредиенты, которые у него есть, и ему выдаются блюда, которые он может из них приготовить. \
+[🌎 сайт проекта](https://foody-frontend.vercel.app)
 
-## Available Scripts
+## Функционал сайта
+***
+- Авторизация
+- Поиск блюд по названию
+- Поиск блюд по ингредиентам
+- Добавление блюда в избранное
+- Удаление блюда из избранного
+- Страница блюда
 
-In the project directory, you can run:
+***
 
-### `npm start`
+* Авторизация
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![image](https://user-images.githubusercontent.com/61833411/190177641-251b2735-f7fe-44c7-aedb-98a76d63231a.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* Поиск блюд по названию
 
-### `npm test`
+![image](https://user-images.githubusercontent.com/61833411/190178222-5e70f909-5a13-44d3-b81c-27cda340d199.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Поиск блюд по ингредиентам
 
-### `npm run build`
+![image](https://user-images.githubusercontent.com/61833411/190178506-4af18150-4216-4bb5-b58c-cff16ef6cfaa.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Страница блюда
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](https://user-images.githubusercontent.com/61833411/190179799-5f6700ad-29b5-44cd-942a-0e802f112a55.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Избранное
 
-### `npm run eject`
+![image](https://user-images.githubusercontent.com/61833411/190180450-9b49a231-f4f3-417e-83c9-6d0507d8a77f.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+***
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Запуск проекта
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Для запуска проекта вам необходимо набрать команду в терминале:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```javascript
+npm i
+```
 
-## Learn More
+После набрать команду:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```javascript
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Технологии проекта
+
+ - _TypeScript_
+ - _React_
+ - _Redux_
+ - _Redux Thunk_
+ - _React Router_
+ - _axios_
+ - _clsx_
+ - _react-hook-form + yup_
+ - _react-tabs_
+ - _react-paginate_
