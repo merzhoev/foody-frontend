@@ -113,6 +113,7 @@ export const SearchByIngrs = () => {
           ))}
           <li className="search__by-ingrs-list-input">
             <input
+              autoComplete="off"
               ref={textFieldRef}
               onChange={handleTextFieldChange}
               value={textFieldValue}

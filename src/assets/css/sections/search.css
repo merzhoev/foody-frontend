@@ -152,7 +152,7 @@
 
 .search__autocomplete {
   position: absolute;
-  z-index: 3;
+  z-index: 77;
   width: 100%;
   height: fit-content;
   max-height: 295px;
